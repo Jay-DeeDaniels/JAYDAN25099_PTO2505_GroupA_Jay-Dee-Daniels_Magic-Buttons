@@ -51,4 +51,35 @@ p {
     outline: none;
 }
 
+.btn-1 {
+    background-color: aquamarine;
+    border: 2px solid #000;
+    color: #508718;
+    padding: 12px 24px;
+    font-size: 12px;
+}
+
+.btn-1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.btn-1 :hover::before {
+width: 0;
+height: 0;
+}
+
+.btn-1 :hover {
+    background-color: crimson;
+}
+
 /* Add your custom styles for btn-1, btn-2, and btn-3 */
