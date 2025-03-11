@@ -85,7 +85,7 @@ width: 0;
 height: 0;
 }
 
-.btn-1 :hover {
+.btn-1:hover {
     background-color: crimson;
     border: 2px solid #1c2cc0;
     color: #fff;
@@ -126,7 +126,47 @@ height: 0;
 }
 
 .btn-2:hover {
-    background-color: crimson;
+    background-color: rgb(218, 232, 23);
+    border: 2px solid #1c2cc0;
+    color: #fff;
+}
+
+.btn-3 {
+    background-color: #3498db;
+    border: 2px solid #000;
+    color: #508718;
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 60px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-3::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.btn-3:hover::before {
+    width: 0;
+    height: 0;
+}
+
+.btn-3:hover {
+    background-color: rgb(20, 220, 20);
     border: 2px solid #1c2cc0;
     color: #fff;
 }
